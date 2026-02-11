@@ -1,0 +1,107 @@
+_wandb:
+    value:
+        cli_version: 0.24.2
+        e:
+            pbvrhn73l1pk8rl7go7psct7wc6m717o:
+                args:
+                    - --data_path
+                    - data/pretrain_data.bin
+                    - --epochs
+                    - "4"
+                    - --batch_size
+                    - "8"
+                    - --grad_accum_steps
+                    - "8"
+                    - --lr
+                    - "5e-4"
+                    - --warmup_steps
+                    - "3000"
+                    - --max_seq_len
+                    - "512"
+                    - --use_wandb
+                    - --wandb_project
+                    - TinyLM
+                    - --exp_name
+                    - tinylm_pretrain_512d_8L_4e-4_lr
+                cpu_count: 16
+                cpu_count_logical: 24
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "100192776192"
+                        used: "64331542528"
+                email: flippedliu@outlook.com
+                executable: /home/hqh/anaconda3/envs/Wenhao/bin/python
+                git:
+                    commit: 9b6ecb7a19f14630d448bbc51e0e07c69df0cd51
+                    remote: git@github.com:AuroraEchos/TinyLM.git
+                gpu: NVIDIA GeForce RTX 4090
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-e071483d-985a-6642-2507-511a102ec8fb
+                host: hqh
+                memory:
+                    total: "33472405504"
+                os: Linux-6.8.0-90-generic-x86_64-with-glibc2.35
+                program: -m scripts.dataset_pretrain
+                python: CPython 3.12.11
+                root: /media/hqh/新加卷1/Wenhao/TinyLM
+                startedAt: "2026-02-11T05:12:27.766969Z"
+                writerId: pbvrhn73l1pk8rl7go7psct7wc6m717o
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+            "2":
+                - 1
+                - 11
+                - 49
+            "3":
+                - 2
+                - 13
+                - 16
+                - 61
+            "4": 3.12.11
+            "5": 0.24.2
+            "6": 4.57.1
+            "12": 0.24.2
+            "13": linux-x86_64
+batch_size:
+    value: 8
+data_path:
+    value: data/pretrain_data.bin
+dtype:
+    value: bfloat16
+epochs:
+    value: 4
+eval_interval:
+    value: 2000
+exp_name:
+    value: tinylm_pretrain_512d_8L_4e-4_lr
+grad_accum_steps:
+    value: 8
+grad_clip:
+    value: 1
+lr:
+    value: 0.0005
+max_seq_len:
+    value: 512
+min_lr:
+    value: 5e-05
+seed:
+    value: 42
+use_wandb:
+    value: true
+val_ratio:
+    value: 0.01
+wandb_project:
+    value: TinyLM
+warmup_steps:
+    value: 3000

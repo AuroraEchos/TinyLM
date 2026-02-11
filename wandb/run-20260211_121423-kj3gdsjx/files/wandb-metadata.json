@@ -1,0 +1,59 @@
+{
+  "os": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.11",
+  "startedAt": "2026-02-11T04:14:23.422968Z",
+  "args": [
+    "--data_path",
+    "data/pretrain_data.bin",
+    "--epochs",
+    "1",
+    "--batch_size",
+    "8",
+    "--grad_accum_steps",
+    "8",
+    "--lr",
+    "5e-4",
+    "--warmup_steps",
+    "2000",
+    "--max_seq_len",
+    "512",
+    "--use_wandb",
+    "--wandb_project",
+    "TinyLM",
+    "--exp_name",
+    "tinylm_pretrain_512d_8L"
+  ],
+  "program": "-m scripts.dataset_pretrain",
+  "git": {
+    "remote": "git@github.com:AuroraEchos/TinyLM.git",
+    "commit": "9b6ecb7a19f14630d448bbc51e0e07c69df0cd51"
+  },
+  "email": "flippedliu@outlook.com",
+  "root": "/media/hqh/新加卷1/Wenhao/TinyLM",
+  "host": "hqh",
+  "executable": "/home/hqh/anaconda3/envs/Wenhao/bin/python",
+  "cpu_count": 16,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "100192776192",
+      "used": "64331522048"
+    }
+  },
+  "memory": {
+    "total": "33472405504"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada",
+      "uuid": "GPU-e071483d-985a-6642-2507-511a102ec8fb"
+    }
+  ],
+  "cudaVersion": "12.2",
+  "writerId": "2smf1bkywvd8ps7sdzelr8hjv3n2ub0i"
+}
