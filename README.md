@@ -20,10 +20,7 @@ NanoMind/
 ├── data/
 │   ├── pretrain_hq.jsonl
 │   |── sft_data.jsonl
-<<<<<<< HEAD
-=======
 │   ├── pretrain_hq.bin
->>>>>>> da8a0fd5f7950b005684b0a094219ef543e49ae8
 │   └── preprocess.py
 ├── tokenizer/
 │   ├── tokenizer.json
